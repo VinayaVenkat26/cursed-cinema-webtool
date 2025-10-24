@@ -63,7 +63,7 @@ if st.button('Submit Answer'):
         st.warning("Please enter your name before submitting!")
     elif door_code == CORRECT_CODE:
         # Custom spooky message when the code is correct
-        st.success(f"[SYSTEM ERROR ❌]  Code submitted… access denied.")
+        st.success(f"[SYSTEM ERROR] Code submitted... code accepted... access denied.")
         st.markdown("""
         ---
         “**Get out now…**”
@@ -73,8 +73,9 @@ if st.button('Submit Answer'):
         
         🎟️ **Koro Sensei awaits at the counter — re-redacte-redacted.**
         
-        Good luck, feller. 💀
+        Good luck feller! 💀
         ---
         """)
     else:
         st.error("❌ The symbols shift... The code is incorrect. Try again before the spirits awaken!")
+
